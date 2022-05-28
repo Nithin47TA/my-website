@@ -7,7 +7,7 @@ const Website = ({Component,pageProps,router}) => {
     return(
     <ChakraProvider>
            <Fonts/>
-
+           
         <Layouts router={router}>
             <AnimatePresence exitBeforeEnter initial={true}>
             <Component {...pageProps} key={router.route}/>
